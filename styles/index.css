@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.container {
+    text-align: center;
+    overflow: hidden; /* Agar container tidak membatasi balon */
+}
+
+/* Gaya untuk amplop */
+#envelope {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flap {
+    background: #d0e7ff;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    transform-origin: bottom;
+    transition: transform 0.6s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.note {
+    background: #fffc87;
+    border: 2px solid #ffb300;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Gaya untuk tombol */
+.btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+}
+
+/* CSS untuk Balon */
+.balloon-container {
+    position: fixed; /* Posisi tetap agar balon dapat bergerak bebas di layar */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Pastikan balon dapat bergerak di seluruh layar */
+    pointer-events: none;
+    overflow: hidden; /* Untuk memastikan elemen tidak keluar dari container */
+    z-index: -1; /* Letakkan di belakang elemen lain */
+}
+
+.balloon {
+    position: absolute;
+    bottom: -100px; /* Posisi balon di luar layar saat pertama kali muncul */
+    width: 50px;
+    height: 100px;
+    background-size: cover;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Animasi untuk setiap balon */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-120vh); /* Pastikan balon bergerak keluar dari layar */
+    }
+}

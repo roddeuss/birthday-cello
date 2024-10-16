@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Latar belakang yang lebih netral untuk page2 */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* Warna teks yang lebih gelap untuk kontras */
+}
+
+#birthdayCake {
+    width: 300px; /* Ukuran kue */
+    margin: 20px auto; /* Pusatkan kue di tengah */
+    display: block; /* Tampilkan kue sebagai block */
+    cursor: pointer; /* Ubah kursor saat hover */
+}
+
+#blowMessage {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ff69b4; /* Warna untuk pesan */
+}
+
+#wishMessage {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #4CAF50; /* Warna untuk pesan wish */
+    display: none; /* Tampilkan setelah lilin ditiup */
+}
+
+/* Gaya untuk tombol */
+.btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

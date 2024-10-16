@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sella</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css"> <!-- Link to index.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container text-center vh-100 d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeIn">
+        <h1 class="display-4">Ucapan Spesial untuk Sella!</h1>
+        <p>Semoga semua impianmu tercapai di usia yang baru ini!</p>
+
+        <!-- Kue Ulang Tahun -->
+        <div class="mt-4">
+            <img id="birthdayCake" src="images/kue-dengan-lilin-menyala.png" alt="Kue Ulang Tahun" class="img-fluid" style="max-width: 300px;">
+        </div>
+
+        <p id="blowMessage" class="mt-4">Tiup lilinnya untuk membuat permohonan!</p>
+
+        <!-- Pesan untuk berdoa (tersembunyi di awal) -->
+        <div id="wishMessage" class="mt-4 hidden">
+            <h3>Buatlah permohonan dan berdoalah!</h3>
+            <p>Semoga semua harapan dan doa-doamu terkabul di tahun ini.</p>
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <button id="backButton" class="btn btn-secondary mt-4">Kembali</button>
+        <button id="finishButton" class="btn btn-primary mt-4">Selesai</button>
+    </div>
+
+    <audio id="birthdaySong" src="https://www.soundjay.com/button/sounds/button-4.mp3" loop></audio>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Separate JavaScript Files -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cake.js"></script>
+</body>
+
+</html>

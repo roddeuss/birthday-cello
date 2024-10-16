@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sella</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css"> <!-- Link to index.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100 position-relative">
+        <div class="row text-center">
+            <div id="envelope" class="animate__animated" onclick="openEnvelope()">
+                <img src="images/amplop-tertutup.jpg" alt="Amplop Tertutup" class="envelope flap img-fluid">
+            </div>
+
+            <div id="message" class="hidden col-12">
+                <div class="note animate__animated mt-4">
+                    <img src="images/kertas-ucapan.jpg" alt="Kertas Ucapan" class="note-paper img-fluid mb-4">
+                    <h1 class="display-4">Selamat Ulang Tahun, Sella Oktaria Sitompul!</h1>
+                    <p>Hari ini adalah hari spesialmu yang ke-24.</p>
+                    <button id="nextButton" class="btn btn-primary mt-4">Lanjutkan</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Area untuk balon -->
+        <div id="balloon-container" class="balloon-container"></div>
+    </div>
+
+    <audio id="birthdaySong" src="https://www.soundjay.com/button/sounds/button-4.mp3" loop></audio>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Separate JavaScript Files -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/envelope.js"></script>
+    <script src="scripts/balloons.js"></script>
+    <script src="scripts/cake.js"></script>
+</body>
+
+</html>
