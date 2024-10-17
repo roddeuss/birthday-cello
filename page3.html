@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Galeri Sella</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <!-- Link to gallery.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Galeri Foto Sella</h1>
+        <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/photo1.jpg" class="d-block w-100" alt="Foto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/photo2.jpg" class="d-block w-100" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/photo3.jpg" class="d-block w-100" alt="Foto 3">
+                </div>
+                <!-- Add more photos as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Sebelumnya</span>
+            </a>
+            <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Berikutnya</span>
+            </a>
+        </div>
+
+        <button class="btn btn-secondary mt-4" onclick="goBack()">Kembali</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+
+</html>

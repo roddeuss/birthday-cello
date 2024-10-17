@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function blowOutCandle() {
         if (!lilinMati) {
             // Change the cake image to the blown-out candle image
-            birthdayCake.src = 'kue-dengan-lilin-padam.png';
+            birthdayCake.src = 'images/kue-dengan-lilin-padam.png';
             // Show the wish message
             wishMessage.classList.remove('hidden');
             blowMessage.style.display = 'none'; // Hide the blow candle message
